@@ -1,7 +1,10 @@
 fastapi
 uvicorn
 transformers
-torch
+torch==2.13.0+cpu
 pydantic
 numpy
 gunicorn
+
+# Use CPU-only PyTorch on Render to reduce image size and avoid GPU packages
+# See https://pytorch.org/get-started/locally/#linux-prerelease

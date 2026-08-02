@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: sentiment-api
+    env: docker
+    dockerfilePath: Dockerfile
+    plan: free
+    regions:
+      - oregon
+    autoDeploy: true
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    healthCheckPath: /

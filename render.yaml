@@ -3,7 +3,7 @@ services:
     name: sentiment-api
     env: docker
     dockerfilePath: Dockerfile
-    plan: standard-1x
+    plan: standard-2x
     regions:
       - oregon
     autoDeploy: true
